@@ -1,9 +1,12 @@
 #ifndef FILEINPUT_h
 #define FILEINPUT_h
 
+#include <stdlib.h>
 #include <fstream>
 #include <iostream>
-#include <string> 
+#include <fstream>
+#include <sstream>
+#include "string.h" 
 #include "assert.h"
 
 using namespace std;
@@ -13,11 +16,11 @@ using std::string;
 class FileInput
 {
     public:
-         FileInput(string fileName); //constructor
-         processFile(string fileName);
+         FileInput(std::string fileName); //constructor
+         processFile();
 
     private:
-        string fileName;
+        std::string fileName;
 };
 
 #endif

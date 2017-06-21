@@ -16,6 +16,7 @@ int main ( int argc, char *argv[] )
         cout << fileName << endl;
 
         FileInput * file = new FileInput(fileName);
+        file->processFile();
 
     }
 }
