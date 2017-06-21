@@ -1,13 +1,12 @@
-#include <fstream>
-#include <iostream>
-#include <string>
-#include "assert.h"
+
+#include "FileInput.h"
 
 using namespace std;
 
 int main ( int argc, char *argv[] )
 {
-    assert( argc > 1 );
+
+    assert(argc > 1);
 
     if(argc > 1 && argv[1] != NULL)
     {
@@ -15,6 +14,8 @@ int main ( int argc, char *argv[] )
 
         cout << "Name of the file entered is: ";
         cout << fileName << endl;
+
+        FileInput * file = new FileInput(fileName);
 
     }
 }

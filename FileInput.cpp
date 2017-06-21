@@ -1,23 +1,18 @@
-#ifndef _FileInput_h
-#define _FileInput_h
 
-#include <fstream>
-#include <iostream>
-#include <string> 
-#include "assert.h"
+#include "FileInput.h"
+
 
 using namespace std;
-using std::string;
 
-//class decleration
-class FileInput
+//class defenition
+FileInput::FileInput(string name) //constructor
 {
-    public:
-        FileInput(string fileName); //constructor
+    fileName = name;
 
-    private:
+}
+ FileInput::processFile(string fileName)
+ {
 
+     
+ }
 
-};
-
-#endif
