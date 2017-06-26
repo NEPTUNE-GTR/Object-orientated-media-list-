@@ -6,6 +6,9 @@ main.o: main.cpp fileInput.h
 
 fileInput.o: fileInput.cpp fileInput.h
 	g++ -c fileInput.cpp
+	
+Object.o: Object.cpp fileInput.h
+	g++ -c Object.cpp
 
 clean:
 	rm *.o test
