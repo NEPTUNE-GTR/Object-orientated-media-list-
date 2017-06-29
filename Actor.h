@@ -4,22 +4,19 @@
 #include "fileInput.h"
 #include "Object.h"
 
-
-class Actor : Object 
+class Actor : public Object 
 {
     public:
-        Actor(string familyName, string givenName, int birthYear, string gender)
-
+        Actor(std::string familyName, std::string givenName, int birthYear, std::string gender);
+        std::string getFamilyName();
+        std::string getGivenName();
+        std::string getGender();
+        int         getBirthYear();
+        ~Actor();
     private:
-        string familyName;
-        string givenName;
-        string gender;
-        int    birthYear;
-
-
-}
-
-
-
-
+        std::string familyName;
+        std::string givenName;
+        std::string gender;
+        int         birthYear;
+};
 #endif
