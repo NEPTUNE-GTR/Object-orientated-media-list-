@@ -6,10 +6,10 @@ using std::string;
 //class defenition
 Actor::Actor(string family, string given, int Year, string gen)
 {
-    familyName = family;
-    givenName  = given;
-    birthYear  = Year;
-    gender     = gen;
+    this->familyName = family;
+    this->givenName  = given;
+    this->birthYear  = Year;
+    this->gender     = gen;
 }
 string Actor::getFamilyName()
 {

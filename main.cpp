@@ -1,11 +1,13 @@
-
 #include "FileInput.h"
+#include "LinkedList.h"
 
 using namespace std;
 
+LinkedList * actorList = new LinkedList();
+LinkedList * movieList = new LinkedList();
+
 int main ( int argc, char *argv[] )
 {
-
     assert(argc > 1);
 
     if(argc > 1 && argv[1] != NULL)
