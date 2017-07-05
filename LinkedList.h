@@ -8,13 +8,12 @@ class LinkedList
 public:
     LinkedList();
     ~LinkedList();
-    void add(Object * data);
+    void add(Object * data, int number);
     Object * get(int index);
     int getSize();
 
 private:
-    Node * top;
-    
+    Node * top;  
 };
 
 #endif

@@ -1,10 +1,8 @@
-#include "FileInput.h"
 #include "LinkedList.h"
+#include "FileInput.h"
 
 using namespace std;
 
-LinkedList * actorList = new LinkedList();
-LinkedList * movieList = new LinkedList();
 
 int main ( int argc, char *argv[] )
 {
@@ -18,6 +16,7 @@ int main ( int argc, char *argv[] )
 
         FileInput * file = new FileInput(fileName);
         file->processFile();
+
 
     }
 }

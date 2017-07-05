@@ -11,7 +11,7 @@ Node::Node(Object * data, Node * next)
     this->data = data;
     this->next = next;
 }
-Node::displayData()
+void Node::displayData()
 {
     cout << data << endl;
 }
@@ -23,7 +23,7 @@ Node * Node::getNextNode()
 {
     return next;
 }
-Node::setNextNode(Node * next)
+void Node::setNextNode(Node * next)
 {
     this->next = next;
 }

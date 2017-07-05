@@ -30,5 +30,8 @@ int Movie::getReleaseYear()
 }
 Movie::~Movie()
 {
-    int x = 1;
+    delete &title;
+    delete &releaseYear;
+    delete &familyName;
+    delete &givenName;
 }

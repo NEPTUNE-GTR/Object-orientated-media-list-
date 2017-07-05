@@ -29,5 +29,8 @@ string Actor::getGender()
 }
 Actor::~Actor()
 {
-    int x = 1;
+    delete &familyName;
+    delete &givenName;
+    delete &birthYear;
+    delete &gender;
 }

@@ -9,9 +9,17 @@ LinkedList::LinkedList()
 {
     top = NULL;
 }
-void LinkedList::add(Object * data)
-{
 
+void LinkedList::add(Object * data, int number)
+{
+    //generic unordered add to front of list
+    Node * newNode = new Node(data, top);
+    top            = newNode; 
+    //////////////////////////////////////////////////
+
+    //Node * curr    = top;
+    //Node * prev    = NULL;
+    
 }
 Object * LinkedList::get(int index)
 {
