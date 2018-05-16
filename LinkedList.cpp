@@ -13,12 +13,28 @@ LinkedList::LinkedList()
 void LinkedList::add(Object * data, int number)
 {
     //generic unordered add to front of list
-    Node * newNode = new Node(data, top);
-    top            = newNode; 
+    //////////////////////////////////////////////////
+    // Node * newNode = new Node(data, top);
+    // top            = newNode; 
     //////////////////////////////////////////////////
 
-    //Node * curr    = top;
-    //Node * prev    = NULL;
+    //ordered add to list
+    Node * curr    = top;
+    Node * prev    = NULL;
+
+    while(curr != NULL && curr->getData()->getId() < number)
+    {
+        prev = curr;
+        curr = curr->getNextNode(); 
+    }
+    if(prev != NULL)
+    {
+        prev->setNextNode( new Node(data, curr));
+    }
+    else
+    {
+        top = new Node(data, curr);
+    }
     
 }
 Object * LinkedList::get(int index)

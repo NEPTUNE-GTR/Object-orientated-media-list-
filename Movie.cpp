@@ -4,12 +4,13 @@ using namespace std;
 using std::string;
 
 //class definition
-Movie::Movie(string title, int releaseYear, string familyName, string givenName)
+Movie::Movie(string title, int releaseYear, string familyName, string givenName, int id)
 {
     this->title       = title;
     this->releaseYear = releaseYear;
     this->familyName  = familyName;
     this->givenName   = givenName;
+    this->id          = id;
 
 }
 string Movie::getTitle()
@@ -27,6 +28,10 @@ string Movie::getFamilyName()
 int Movie::getReleaseYear()
 {
     return releaseYear;
+}
+int Movie::getId()
+{
+    return id;
 }
 Movie::~Movie()
 {

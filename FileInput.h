@@ -6,21 +6,22 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include "string.h" 
+#include <string> 
 #include "assert.h"
+#include "Actor.h"
+#include "Movie.h"
 
-using namespace std;
-using std::string;
+
 
 //class decleration
 class FileInput
 {
     public:
          FileInput(std::string fileName); //constructor
-         processFile();
-
+         void processFile();
+         void processActor(std::string line);
+         void processMovies(int position);
     private:
         std::string fileName;
 };
-
 #endif

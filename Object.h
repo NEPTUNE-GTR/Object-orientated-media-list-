@@ -7,7 +7,9 @@ class Object
 
 public:
     virtual ~Object() = 0;
-    int id;
+    virtual int getId() = 0;
+private:
+
 };
 inline Object::~Object() { }
 
